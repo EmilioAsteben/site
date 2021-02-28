@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap');
+.card__modal__inner{
+    display:flex;
+    width: 100%;
+    height: 100%;
+}
+
+.left__inner{
+    display: flex;
+    
+    justify-content: space-around;
+    align-items:center;
+    
+    max-height: 100%;
+    flex-basis: 250px;
+    flex-shrink: 2;
+    border-bottom-left-radius: 12px;
+    border-top-left-radius: 12px;
+    background: linear-gradient(90deg, 
+    rgba(226,226,226,1) 0%,
+     rgba(222,222,222,1) 48%,
+      rgba(255,255,255,1) 100%);
+}
+
+.laptop__img {
+    
+   flex-basis: 120px;
+    
+}
+
+.tablet__img {
+    flex-basis: 185px;
+    
+}
+
+.phone__img {
+    flex-basis: 100px;
+    
+}
+
+.right__inner{
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-grow: 2;
+    flex-basis: 296px;
+    padding-bottom: 5px;
+    
+}
+
+.right__inner  p {
+    font-family: 'Source Serif Pro', serif;
+}
+
+.right__inner h3 { 
+    font-family: Raleway, serif;
+    margin:15px 0 0 0;
+}
+
+.right__inner p {
+    color: rgba(59, 59, 59, 0.877);
+    line-height: 1.5em;
+    max-width: 100%;
+}
+
+.modal__list__section h4{
+    font-family: 'Raleway', serif;
+    margin: 15px 0 15px 0;
+}
+
+.right__inner ul{
+     list-style: none;
+     padding-left:15px;
+     font-family: 'Source Serif Pro', serif;
+     font-size:0.95em;
+     color: rgb(59, 59, 59)
+}
+
+.right__inner ul li{
+
+    margin-top:5px;
+}
+.right__inner ul li::before{
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: rgb(7, 163, 20); /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+    
+}
+
+
+
+
+

@@ -1,0 +1,99 @@
+.modal {
+    position:absolute;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    top:0;
+    left:0;
+    
+    width:100vw;
+    height: 100vh;
+    
+    
+    
+  
+}
+
+.modal__background{
+    position: absolute;
+    width:100vw;
+    height: 100vh;
+    z-index: 1;
+    opacity: 1;
+    transition: opacity .2s ease-in-out;
+    animation-duration: 0.55s;  /* Время работы анимации */
+    animation-fill-mode: both;  /* Поведение анимации */
+    animation-name: magicOpacity; /* Имя анимации */
+    cursor: pointer;
+}
+
+.modal__background:hover{
+    opacity: .9;
+    transition: opacity .2s ease-in-out;
+}
+
+
+@keyframes magicOpacity {
+  from {
+   background-color: rgba(0,0,0,0.1);
+  }
+
+  to {
+  background-color: rgba(0,0,0,0.7);
+  }
+}
+
+.modal__calc{
+    position: relative;
+    display:flex;
+    width:620px;
+    min-height: 450px;
+    border-radius: 10px;
+    background-color: #fff;
+    z-index: 2; 
+}
+.modal__content{
+    position: relative;
+    display:flex;
+    width:645px;
+    height: 350px;
+    border-radius: 10px;
+    background-color: #fff;
+    z-index: 2;
+}
+
+
+
+.close__modal{
+    position: absolute;
+    margin: 8px 10px 0 0;
+    padding: 0;
+    top:0;
+    right:0;
+    border: 0;
+    background: transparent;
+    opacity: .3;
+    transition: opacity .2s ease-in;
+    z-index: 1;
+    cursor:pointer;
+}
+
+.close__modal:hover{
+    opacity: 1;
+    transition: opacity .2s ease-in-out;
+}
+
+.close__modal img{
+    max-width: 25px;
+    z-index: 7;
+}
+
+.background__route__link{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+    
+
+
+

@@ -1,0 +1,195 @@
+.modal__calc{
+    justify-content: center;
+    
+}
+
+.form{
+    margin: 15px 0 25px 0;
+}
+
+form{
+
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+  
+}
+
+.form__input{
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 12px;
+
+    label{
+        margin-bottom: 5px;
+        display:block;
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.2em;
+    }
+   
+
+    input:not(.submit__button) {
+        box-sizing: border-box;
+        padding-left: 10px;
+        width: 300px;
+        min-height: 30px;
+        border-radius: 5px;
+        border: 1px solid black;
+        font-family: Roboto;
+        font-size: 1.1em;
+        &::placeholder{
+            font-size: .9em;
+            opacity: .3;
+        }
+
+        &:focus{ outline: none;}
+        color: rgba($color: #474747, $alpha: 1.0);
+        text-align: left;
+    }
+
+ 
+
+    textarea{
+
+        border-radius: 3px;
+        border: 1px solid black;
+        width: 300px;
+        height: 80px;
+        resize: none;
+        padding: 5px;
+        font-family:Arial;
+        font-size: .96em;
+        color: rgba($color: #2e2e2e, $alpha: 1.0);
+        &:focus{ outline: none;}
+        
+
+    }
+
+    .submit__button{
+        flex-basis: 40px;
+    }
+
+ 
+    
+}
+
+
+
+.input__submit{
+    margin-top:10px;
+    display: flex;
+    justify-content: center;
+    flex-basis: 40px;
+    height: 50px;
+    
+
+    .submit__button{
+        height: 100%;
+        min-width:200px;
+    }
+}
+
+
+
+form{
+
+    position: relative;
+
+}
+
+.submit__button {
+	background-color:#44c767;
+	border-radius:4px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	
+	text-decoration:none;
+}
+.submit__button:hover {
+	background-color:#34a151;
+}
+.submit__button:active {
+	position:relative;
+	top:1px;
+}
+
+
+.whapp__toogle__button{
+    background: url( './images/icons/whatsapp-colored.png' );
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    border:none;
+    width: 30px;
+    height: 30px;
+    
+}
+
+.tg__toogle__button{
+    background: url( './images/icons/telegram-colored.png' );
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 10px;
+    border:none;
+    width: 25px;
+    height: 25px;
+}
+
+.phone__input {
+   margin-bottom:5px;
+}
+
+.phone__apps{
+    display: flex;
+    align-items: center;
+
+    
+}
+
+.way__communication{
+    margin-top:15px;
+
+    button{
+        cursor: pointer;
+        opacity: .3;
+        transition: opacity .1s ease-in-out;
+        &:focus{outline:none};
+        &:active{outline:none};
+
+        &:hover{
+            opacity: .5;
+            transition: opacity .1s ease-in-out;
+        }
+            
+        }
+
+        button.choosed{
+            opacity: 1;
+            &:focus{outline:none};
+            &:active{outline:none};
+        }
+
+    label{
+        font-size: 0.97em;
+    }
+
+    span{
+        font-family: Roboto;
+        display: inline-flex;
+        font-size: 0.8em;
+        color: rgba($color: #585757, $alpha: .5);
+        margin-left: 10px;
+
+
+    }
+}
+
+

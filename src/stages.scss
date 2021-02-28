@@ -1,0 +1,25 @@
+.stages__modal{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+   
+    
+}
+
+.stages__modal__inner h3{
+    font-family: Raleway;
+    font-size: 1.6em;
+    
+}
+
+.stages__modal__inner ol{
+    padding: 0;
+    font-family: 'Source Serif Pro', serif;
+
+}
+
+.stages__modal__inner ol li{
+    margin-top: 5px;
+    font-size: 1.1em;
+}

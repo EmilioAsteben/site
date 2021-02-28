@@ -1,13 +1,357 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
+
+
+html, body, #root, .App {
+  height: 100vh;
+  margin:0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+
+
+
+body {
+  
+  padding: 0;
+  background-color: rgb(248, 244, 244);
+  
+
 }
+
+.App{
+  display: flex;
+  flex-direction: column;
+}
+
+header{
+  
+  display:flex;
+  width:100%;
+  flex-basis: 50px;
+  background-color: rgb( 255, 255, 255 );
+  flex-shrink: 0;
+  
+
+}
+
+.header__inner{
+  background-color: rgba( 234, 150, 150, 0.2 );
+  margin-left:auto;
+  margin-right:auto;
+  flex-basis: 1100px;
+  display: flex;
+  justify-content: space-between;
+  
+
+}
+
+.right__header .phone-number{
+  margin-right:25px;
+  
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2em;
+}
+
+.right__header{
+  display: flex;
+  align-items: center;
+}
+
+.logo{
+  
+  max-width:150px;
+  margin-left:90px;
+  
+}
+
+.messenger__links{
+  
+  margin-right: 40px;
+ 
+}
+
+.messenger__links a img{
+ width:30px;
+}
+
+.tg-icon{
+  margin-right:20px;
+}
+
+
+
+footer{
+  flex-basis: 25px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  background-color: black;
+  width: 100%;
+  z-index: 1;
+}
+
+.container_wrapper{
+  
+  display:flex;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
+
+.container{
+
+ margin:0;
+ padding: 0;
+ flex-basis: 1100px;
+ flex-shrink: 2;
+ 
+  
+  /* min-width: 1100px; */
+ 
+  
+  margin-left:auto;
+  margin-right:auto;
+  background-color: rgba(150, 200, 234, 0.2);
+  
+
+}
+
+.container__heading{
+  
+ text-align:center;
+ 
+  margin-left:auto;
+  margin-right:auto;
+  font-family: 'Raleway', sans-serif;
+  font-size: 2.3em;
+}
+
+.cards__section{
+  display: flex;
+  justify-content: space-between;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 20;
+  padding: 0 40px;
+
+}
+
+ .cards__section.hidden {
+  visibility: hidden;
+}
+
+.site__card{
+  position: relative;
+  width: 250px;
+  height: 330px;
+  background-color: white;
+  border-radius: 12px;
+  transition: box-shadow .2s ease-in;
+  border: 1px ridge #E1E1E1;
+  z-index: inherit;
+ 
+
+}
+
+.site__card:hover {
+  -webkit-box-shadow: -4px 9px 15px -10px #000000; 
+  box-shadow: -4px 9px 15px -10px #000000;
+  
+  
+  
+}
+
+.site__card h3{
+  text-align: center;
+  margin-left:auto;
+  margin-right:auto;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.3em;
+
+}
+
+.site__card ul{
+  margin-top:35px;
+}
+
+.site__card ul li{
+  margin-top:10px;
+  padding-left: 5px;
+  font-family: roboto;
+  font-size: 15px;
+  cursor: default;
+}
+
+.site__card ul li:nth-child(-n+4){
+  list-style-image: url(./images/icons/checkmark.png);
+  
+  
+}
+
+.item__two ul li:nth-child(-n+5){
+  list-style-image: url(./images/icons/checkmark.png);
+  
+  
+}
+
+ .item__one ul li:nth-child(n + 5){
+  list-style: none;
+}
+
+
+
+
+
+
+.item__two{
+ 
+}
+
+
+.info__icon img{
+  margin-top:15px;
+  margin-right:15px;
+  position: absolute;
+  top:0;
+  right:0;
+  width:18px;
+  opacity: 0.4;
+  transition: opacity .2s ease-in-out;
+}
+
+.info__icon img:hover{opacity: 1;}
+
+.flat-button {
+  display: block;
+  position: relative;
+  width: 175px;
+  background: rgba(3, 163, 25, 0.8);
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 0 10px 0 10px;
+  overflow: hidden;
+  z-index: 1;
+  cursor: pointer;
+  transition: color .3s;
+  /* Typo */
+  line-height: 50px;
+  text-align: center;
+  color: #fff;
+  font-size: 1em;
+  text-decoration: none;
+  font-family: roboto;
+  border-radius: 5px;
+}
+
+.flat-button:after {
+  position: absolute;
+  top: 90%; left: 0;
+  width: 100%; height: 100%;
+  background: #038a15;
+  content: "";
+  z-index: -2;
+  transition: transform .7s;
+}
+
+.flat-button:hover::after {
+  transform: translateY(-85%);
+  transition: transform 0.5s;
+}
+
+.order__link{
+  display:block;
+  text-align: center;
+  margin-top:35px;
+  margin-bottom:25px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: roboto;
+  
+  font-size: 15px;
+  text-decoration: none;
+  
+ 
+  color:rgb(119, 111, 111);
+  transition: color .6s;
+}
+
+.order__link:hover{
+  text-decoration: underline;
+  color:rgb(95, 91, 91);
+}
+
+.show__works {
+  position: relative;
+  margin-left:auto;
+  margin-right:auto;
+  width: 260px;
+  display:flex;
+  
+  align-items: center;
+
+}
+.show__works a{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  margin-right:15px;
+  color:rgb(53, 53, 53);
+  text-decoration: none;
+  cursor:pointer;
+ 
+
+}
+
+.show__works a:hover{
+  text-decoration: underline;
+}
+
+
+@media (max-width: 600px) {
+
+  html,body{
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+  }
+
+  .show__works{
+    left:3%;
+  }
+
+  .container{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .container__heading{
+    font-size: 1.35em;
+    margin-top: 1em;
+  }
+
+  .phone-number{
+    display: none;
+  }
+
+  .cards__section{
+
+    justify-content: center;
+  }
+
+  .item__two{
+
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
