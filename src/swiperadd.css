@@ -1,0 +1,14 @@
+.swiper-container {
+    width: 1000px;
+    height: 1000px;
+  }
+
+.swiper-wrapper{
+    
+}
+
+  .swiper-slide{
+    min-width: 250px;
+    min-height: 330px;
+    
+  }

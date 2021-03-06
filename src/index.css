@@ -4,10 +4,9 @@
 
 
 html, body, #root, .App {
-  height: 100vh;
+  height: 100%;
   margin:0;
 }
-
 
 
 
@@ -16,6 +15,7 @@ body {
   
   padding: 0;
   background-color: rgb(248, 244, 244);
+
   
 
 }
@@ -31,7 +31,7 @@ header{
   width:100%;
   flex-basis: 50px;
   background-color: rgb( 255, 255, 255 );
-  flex-shrink: 0;
+  flex-shrink: 1;
   
 
 }
@@ -62,7 +62,7 @@ header{
 
 .logo{
   
-  max-width:150px;
+  align-self: center;
   margin-left:90px;
   
 }
@@ -150,7 +150,7 @@ footer{
   background-color: white;
   border-radius: 12px;
   transition: box-shadow .2s ease-in;
-  border: 1px ridge #E1E1E1;
+  border: 1px solid #E1E1E1;
   z-index: inherit;
  
 
@@ -325,6 +325,9 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    max-width: 1000px;
+    overflow: hidden;
+    box-shadow: -100px 0px 62px -26px rgba(0, 0, 0, 0.2) inset;
   }
 
   .container__heading{
@@ -339,11 +342,18 @@ footer{
   .cards__section{
 
     justify-content: center;
+    max-width: 100%;
+    padding:0;
+    
   }
 
   .item__two{
 
-    display: none;
+    
+  }
+
+  .site__card{
+    width:235px;
   }
 }
 

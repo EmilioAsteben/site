@@ -91,6 +91,22 @@
     
 }
 
+@media (max-width: 600px) {
+
+    .tablet__img {
+        display: none;
+    }
+
+    .left__inner {
+        flex-basis: 45px;
+        opacity: .2;
+    }
+
+    .card__modal__inner{
+        padding-right: 20px;
+    }
+}
+
 
 
 

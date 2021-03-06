@@ -23,3 +23,18 @@
     margin-top: 5px;
     font-size: 1.1em;
 }
+
+@media (max-width: 600px) {
+
+    .stages__modal__inner ol {
+        
+        padding: 0 0 0 25px;
+        list-style-position: inside;
+    
+    }
+
+    .stages__modal__inner h3{
+        margin-left: 1em;
+        font-size: 1.3em;
+    }
+}
